@@ -164,7 +164,7 @@ void USART0_IRQHandler(void)
 */
 void USART1_IRQHandler(void)
 {
-	UART_IRQn(&g_tUart1);
+	// UART_IRQn(&g_tUart1);
 }
 
 
@@ -176,7 +176,7 @@ void USART1_IRQHandler(void)
 */
 void USART2_IRQHandler(void)
 {
-	UART_IRQn(&g_tUart2);
+	// UART_IRQn(&g_tUart2);
 }
 
 /*!

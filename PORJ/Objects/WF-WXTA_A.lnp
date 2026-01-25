@@ -37,6 +37,7 @@
 ".\objects\main.o"
 ".\objects\sys.o"
 ".\objects\sys_config.o"
+".\objects\task_com.o"
 ".\objects\task_gui.o"
 ".\objects\task_dose.o"
 ".\objects\task_status.o"

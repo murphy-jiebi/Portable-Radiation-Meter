@@ -429,11 +429,6 @@
               <FilePath>..\GDLIB\Source\gd32f10x_dbg.c</FilePath>
             </File>
             <File>
-              <FileName>gd32f10x_fwdgt.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\GDLIB\Source\gd32f10x_fwdgt.c</FilePath>
-            </File>
-            <File>
               <FileName>gd32f10x_dma.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\GDLIB\Source\gd32f10x_dma.c</FilePath>
@@ -459,6 +454,11 @@
               <FilePath>..\GDLIB\Source\gd32f10x_fmc.c</FilePath>
             </File>
             <File>
+              <FileName>gd32f10x_fwdgt.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\GDLIB\Source\gd32f10x_fwdgt.c</FilePath>
+            </File>
+            <File>
               <FileName>gd32f10x_gpio.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\GDLIB\Source\gd32f10x_gpio.c</FilePath>
@@ -477,11 +477,6 @@
               <FileName>gd32f10x_pmu.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\GDLIB\Source\gd32f10x_pmu.c</FilePath>
-            </File>
-            <File>
-              <FileName>gd32f10x_wwdgt.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\GDLIB\Source\gd32f10x_wwdgt.c</FilePath>
             </File>
             <File>
               <FileName>gd32f10x_rcu.c</FileName>
@@ -512,6 +507,11 @@
               <FileName>gd32f10x_usart.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\GDLIB\Source\gd32f10x_usart.c</FilePath>
+            </File>
+            <File>
+              <FileName>gd32f10x_wwdgt.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\GDLIB\Source\gd32f10x_wwdgt.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -622,6 +622,26 @@
               <FileName>Task_com.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\APP\Task_com.c</FilePath>
+            </File>
+            <File>
+              <FileName>Task_gui.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\Task_gui.c</FilePath>
+            </File>
+            <File>
+              <FileName>Task_dose.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\Task_dose.c</FilePath>
+            </File>
+            <File>
+              <FileName>Task_status.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\Task_status.c</FilePath>
+            </File>
+            <File>
+              <FileName>Task_manage.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\Task_manage.c</FilePath>
               <FileOption>
                 <CommonProperty>
                   <UseCPPCompiler>2</UseCPPCompiler>
@@ -673,21 +693,6 @@
                   </Cads>
                 </FileArmAds>
               </FileOption>
-            </File>
-            <File>
-              <FileName>Task_gui.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\APP\Task_gui.c</FilePath>
-            </File>
-            <File>
-              <FileName>Task_dose.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\APP\Task_dose.c</FilePath>
-            </File>
-            <File>
-              <FileName>Task_status.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\APP\Task_status.c</FilePath>
             </File>
           </Files>
         </Group>

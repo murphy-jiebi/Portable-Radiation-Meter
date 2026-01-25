@@ -44,6 +44,7 @@ UART_T g_tUart0;
 uint8_t g_TxBuf0[UART0_TX_BUF_SIZE];
 uint8_t g_RxBuf0[UART0_RX_BUF_SIZE];
 
+#if 0
 UART_T g_tUart1;
 uint8_t g_TxBuf1[UART1_TX_BUF_SIZE];
 uint8_t g_RxBuf1[UART1_RX_BUF_SIZE];
@@ -51,6 +52,7 @@ uint8_t g_RxBuf1[UART1_RX_BUF_SIZE];
 UART_T g_tUart2;
 uint8_t g_TxBuf2[UART2_TX_BUF_SIZE];
 uint8_t g_RxBuf2[UART2_RX_BUF_SIZE];
+#endif
 
 UART_T g_tUart3;
 uint8_t g_TxBuf3[UART3_TX_BUF_SIZE];
@@ -76,7 +78,8 @@ static void uart_var_init(void)
 	g_tUart0.usRxCount = 0;
 	g_tUart0.ucTxFrame = 0;
 	g_tUart0.ucRxFrame = 0;
-    
+   
+	#if 0
 	g_tUart1.uart = USART1;
 	g_tUart1.pTxBuf = g_TxBuf1;
 	g_tUart1.pRxBuf = g_RxBuf1;
@@ -97,6 +100,8 @@ static void uart_var_init(void)
 	g_tUart2.ucTxFrame = 0;
 	g_tUart2.ucRxFrame = 0;
 	
+	#endif
+
     g_tUart3.uart = UART3;
 	g_tUart3.pTxBuf = g_TxBuf3;
 	g_tUart3.pRxBuf = g_RxBuf3;
@@ -194,9 +199,9 @@ void UART_IRQn(UART_T *_pUart)
 	{
 		if (_pUart->usTxIndex >= _pUart->usTxCount)
 		{
-			/* ���ͻ�������������ȡ��ʱ�� ��ֹ���ͻ��������ж� ��ע�⣺��ʱ���1�����ݻ�δ����������ϣ�*/
+			/* ���ͻ�������������ȡ��ʱ�� ��ֹ���ͻ��������ж� ��ע�⣺��ʱ���?1�����ݻ�δ����������ϣ�?*/
 			usart_interrupt_disable(_pUart->uart,USART_INT_TBE);
-			/* ʹ�����ݷ�������ж� */
+			/* ʹ�����ݷ�������ж�? */
 			usart_interrupt_enable(_pUart->uart,USART_INT_TC);;
 		}
 		else
@@ -206,7 +211,7 @@ void UART_IRQn(UART_T *_pUart)
 			_pUart->usTxIndex++;
 		}
 	}
-	/* ����bitλȫ��������ϵ��ж� */
+	/* ����bitλȫ��������ϵ��ж�? */
 	else if (usart_interrupt_flag_get(_pUart->uart, USART_INT_FLAG_TC) != RESET)
 	{
 		_pUart->usTxIndex = 0x00;
@@ -233,9 +238,9 @@ void UART_IRQn(UART_T *_pUart)
 void BSP_Uart_Init(void)
 {
     /* enable GPIO clock */
+	rcu_periph_clock_enable(RCU_USART0);
 
-    
-    rcu_periph_clock_enable(RCU_GPIOA);
+	rcu_periph_clock_enable(RCU_GPIOA);
 	rcu_periph_clock_enable(RCU_USART1);   /* ʹ��ʱ�� */	
     
     rcu_periph_clock_enable(RCU_GPIOC);
@@ -343,15 +348,15 @@ void BSP_Uart_Init(void)
 	
 	usart_deinit(UART3);  /* ��λ���� */
 	
-	usart_baudrate_set(UART3, UART2_BAUD);   /* ������ */
-	
-	usart_parity_config(UART3, USART_PM_NONE);   /* ��ż����λ */
-	
+	usart_baudrate_set(UART3, UART3_BAUD);   /* ������ */
+
+	usart_parity_config(UART3, USART_PM_EVEN); /* ��ż����λ */
+
 	usart_word_length_set(UART3, USART_WL_8BIT); /* �ֳ� */
-	
-	usart_stop_bit_set(UART3, USART_STB_1BIT);  /* ֹͣλ */
-	
-    usart_hardware_flow_rts_config(UART3, USART_RTS_DISABLE);
+
+	usart_stop_bit_set(UART3, USART_STB_2BIT); /* ֹͣλ */
+
+	usart_hardware_flow_rts_config(UART3, USART_RTS_DISABLE);
     usart_hardware_flow_cts_config(UART3, USART_CTS_DISABLE);
 	
 	usart_transmit_config(UART3, USART_TRANSMIT_ENABLE);  
@@ -365,6 +370,28 @@ void BSP_Uart_Init(void)
 	nvic_irq_enable(UART3_IRQn, 0, 3);
  
     RS485_RX_ON;
+}
+
+void Uart3SetBaud(uint32_t baud)
+{
+	usart_deinit(UART3);  /* ��λ���� */
+	
+	usart_baudrate_set(UART3, baud);   /* ������ */
+
+	usart_parity_config(UART3, USART_PM_EVEN); /* ��ż����λ */
+
+	usart_word_length_set(UART3, USART_WL_8BIT); /* �ֳ� */
+
+	usart_stop_bit_set(UART3, USART_STB_2BIT); /* ֹͣλ */
+
+	usart_hardware_flow_rts_config(UART3, USART_RTS_DISABLE);
+	usart_hardware_flow_cts_config(UART3, USART_CTS_DISABLE);
+	
+	usart_transmit_config(UART3, USART_TRANSMIT_ENABLE);  
+	
+	usart_receive_config(UART3, USART_RECEIVE_ENABLE);    
+
+	usart_enable(UART3); 
 }
 
 

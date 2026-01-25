@@ -17,9 +17,11 @@ void Display_setWarnVal(uint8_t x, uint8_t y, uint8_t val[6], uint8_t index);
 uint8_t GetDoseUnit(float dose);
 
 void Display_unitParam(uint8_t x, uint8_t y, uint8_t unit);
-void Display_brightness(uint8_t x, uint8_t y, uint8_t brightness);
+void Display_brightness(uint8_t x, uint8_t y, uint8_t brightness, uint8_t mode);
 
-void Display_scaleBar(uint8_t x, uint8_t y,uint16_t cur);
+    void Display_scaleBar(uint8_t x, uint8_t y, uint16_t cur);
+
+void Display_ProgressBar(uint8_t x, uint8_t y, uint8_t width, uint8_t height, uint8_t bar);
 
 #endif
 

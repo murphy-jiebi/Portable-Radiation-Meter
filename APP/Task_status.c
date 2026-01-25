@@ -1,6 +1,7 @@
 #include "TASK_status.h"
 #include "Task_dose.h"
 #include "bsp_gpio.h"
+#include "user.h"
 
 extern float warnRangeRate ;
 extern float warnRangeDose ;

@@ -1,110 +1,123 @@
 #include "Task_com.h"
-#include "bsp_uart.h"
-#include "modbus_slave.h"
 #include "string.h"
+#include "bsp_uart.h"
+#include "user.h"
 
-uint8_t MonitPara[30];
+uint8_t dtSendCnt = 0;
+uint8_t dtRecCnt = 0;
 
-/*
-*********************************************************************************************************
-*	? ? ?: list_init
-*	????: ?????
-*	?    ?: ?
-*	? ? ?: ?
-*********************************************************************************************************
-*/
-void ModBus_RegRefresh(void)
+uint8_t Detector_group[10][8] = {
+	//{0x07,0x32,0x30,0x52,0x44,0x46,0x46,0x03},
+
+	{0x07, 0x31, 0x30, 0x52, 0x44, 0x46, 0x45, 0x03},
+	{0x07, 0x30, 0x31, 0x52, 0x44, 0x46, 0x45, 0x03},
+	{0x07, 0x30, 0x32, 0x52, 0x44, 0x46, 0x46, 0x03},
+	{0x07, 0x30, 0x33, 0x52, 0x44, 0x30, 0x30, 0x03},
+	{0x07, 0x30, 0x34, 0x52, 0x44, 0x30, 0x31, 0x03},
+	{0x07, 0x30, 0x35, 0x52, 0x44, 0x30, 0x32, 0x03},
+	{0x07, 0x30, 0x36, 0x52, 0x44, 0x30, 0x33, 0x03},
+	{0x07, 0x30, 0x37, 0x52, 0x44, 0x30, 0x34, 0x03},
+	{0x07, 0x30, 0x38, 0x52, 0x44, 0x30, 0x35, 0x03},
+	{0x07, 0x30, 0x39, 0x52, 0x44, 0x30, 0x36, 0x03},
+
+	//{0x07,0x31,0x31,0x52,0x44,0x46,0x46,0x03},
+	//{0x07,0x31,0x32,0x52,0x44,0x30,0x30,0x03},
+	//{0x07,0x31,0x33,0x52,0x44,0x30,0x31,0x03},
+	//{0x07,0x31,0x34,0x52,0x44,0x30,0x32,0x03},
+	//{0x07,0x31,0x35,0x52,0x44,0x30,0x33,0x03},
+	//{0x07,0x31,0x36,0x52,0x44,0x30,0x34,0x03},
+	//{0x07,0x31,0x37,0x52,0x44,0x30,0x35,0x03},
+	//{0x07,0x31,0x38,0x52,0x44,0x30,0x36,0x03},
+	//{0x07,0x31,0x39,0x52,0x44,0x30,0x37,0x03},
+
+};
+
+void DetectoCom(uint8_t tick)
 {
-	memcpy(MonitPara + 0, (uint8_t*)&Chn_Data.value, 4);  /* ????? */
-	*(MonitPara + 4) = 0x00;
-	*(MonitPara + 5) = Chn_Data.nbr_status;  				/* NBR */
-	memcpy(MonitPara + 6, (uint8_t*)&Chn_Data.sensi_value, 4);   /* ????? */
-	memcpy(MonitPara + 10, (uint8_t*)&Chn_Data.fact, 4);   /* ???? */
-	memcpy(MonitPara + 14, (uint8_t*)&Chn_Data.back_ground, 4);   /* ?? */
-	*(MonitPara + 18) = 0x00;
-	*(MonitPara + 19) = Chn_Data.unit;
-	*(MonitPara + 20) = 0x00;
-	*(MonitPara + 21) = SysInfo.DeviceID;
+	uint16 i, m;
+	int state;
+	float f_value;
+	uint8_t ReceBuf[200];
+	float nbr;
+	float calibFactor = 1.0f;
+	static uint8 s_ucIndex = 0x00; /* 探测器编号 */
+
+	//	static uint8_t AlarmOutPut = DETECTOR_FAULT;  /* 总状态 */
 	
-	memset(MonitPara + 22, 0x00, 8);
+
+	if (g_tUart3.ucRxFrame != 0x00)
+	{
+		for (m = 0; m < g_tUart3.usRxCount; m++)
+		{
+			ReceBuf[m] = g_tUart3.pRxBuf[m] & 0x7F;
+		}
+		if (memcmp(ReceBuf, Detector_group[s_ucIndex], 5) == 0x00)
+		{
+			if (detectorType == DETECTOR_1)
+			{
+				sscanf((char *)(ReceBuf + 3), "RD %f %d %f", &f_value, &state, &nbr);
+			}
+			else
+			{
+				sscanf((char *)(ReceBuf + 3), "RD %f  ", &f_value);
+			}
+//			Detector[i].Value = f_value * calibFactor; /* 校准系数 */
+			dtRecCnt++;
+		}
+
+		g_tUart3.usRxCount = 0;
+		g_tUart3.ucRxFrame = 0x00;
+	}
+
+	if (!tick)
+	{
+		return;
+	}
+	s_ucIndex++;
+	if (s_ucIndex >= 10)
+	{
+		s_ucIndex = 0;
+	}
+
+	uart_send_buf(&g_tUart3, Detector_group[s_ucIndex], 8);
+	dtSendCnt++;
 }
 
-/*0
-*********************************************************************************************************
-*	? ? ?: Para_Refresh
-*	????: ????
-*	?    ?: ?
-*	? ? ?: ?
-*********************************************************************************************************
-*/
-static void Para_Refresh(void)
+uint16_t DebugReplyFramePacket(uint8_t *buf, uint8_t cmd)
 {
-	uint16_t value;
+	uint16_t i = 0;
 	
-	if(memcmp(MonitPara + 6, (uint8_t*)&Chn_Data.sensi_value, 4) != 0x00)
-	{
-		memcpy((uint8_t*)&Chn_Data.sensi_value, MonitPara + 6, 4);   /* ???? */
-		write_eeprom((uint8_t*)&Chn_Data.sensi_value, e2rom_addr(_Sensi_Value), 4);
-	}
-	
-	if(memcmp(MonitPara + 10, (uint8_t*)&Chn_Data.fact, 4) != 0x00)
-	{
-		memcpy((uint8_t*)&Chn_Data.fact, MonitPara + 10, 4);   /* ???? */
-		write_eeprom((uint8_t*)&Chn_Data.fact, e2rom_addr(_Fact), 4);
-	}
-	
-	if(memcmp(MonitPara + 14, (uint8_t*)&Chn_Data.back_ground, 4) != 0x00)
-	{
-		memcpy((uint8_t*)&Chn_Data.back_ground, MonitPara + 14, 4);   /* ?? */
-		write_eeprom((uint8_t*)&Chn_Data.back_ground, e2rom_addr(_BackGroung), 4);
-	}
-	
-	*(MonitPara + 18) = 0x00;
-	if(*(MonitPara + 19) > 0x02)
-	{
-		*(MonitPara + 19) = 0x02;
-	}
-	if(*(MonitPara + 19) != Chn_Data.unit)
-	{
-		Chn_Data.unit = *(MonitPara + 19);
-		write_eeprom(&Chn_Data.unit, e2rom_addr(_Unit), 1);
-	}
-	
-	*(MonitPara + 20) = 0x00;
-	if(*(MonitPara + 21) != SysInfo.DeviceID)
-	{
-		SysInfo.DeviceID = *(MonitPara + 21);
-		write_eeprom(&SysInfo.DeviceID, e2rom_addr(_Device_Id), 1);
-	}
-	
-
-	/* ?????? */
-	value = (*(MonitPara + 22) << 8) + *(MonitPara + 23);
-	if(value != 0x00)
-	{
-		*(MonitPara + 22) = 0x00;
-		*(MonitPara + 23) = 0x00;
-		set_eeprom(0x00, e2rom_addr(_E2rom_Flag), 1);		
-		/* ???? */
-		NVIC_SystemReset();
-	}
 
 }
 
-
-void Task_com(void)
+void DebugDataParse(uint8_t *buf, uint16_t len)
 {
-	
-	if(g_tUart3.ucRxFrame != 0x00)
+	uint16_t i = 0;
+	uint8_t sendBuf[64];
+	uint16_t sendLen = 0;
+
+	uart_send_buf(&g_tUart0, sendBuf, sendLen);
+}
+
+
+void Task_com(uint8_t tick)
+{
+	DetectoCom(tick);
+
+//	if (g_tUart3.ucRxFrame != 0x00)
+//	{
+//		memset(g_tUart3.pRxBuf, 0x00, g_tUart3.usRxCount);
+//		g_tUart3.usRxCount = 0;
+//		g_tUart2.ucRxFrame = 0x00;
+//		
+//	}
+
+	if (g_tUart0.ucRxFrame != 0x00)
 	{
-		MODS_Poll(g_tUart2.pRxBuf, g_tUart2.usRxCount);
-		memset(g_tUart2.pRxBuf, 0x00, g_tUart2.usRxCount);
-		g_tUart2.usRxCount = 0;
-		g_tUart2.ucRxFrame = 0x00;
-		
-		Para_Refresh();   /* ???? */
+		DebugDataParse(g_tUart0.pRxBuf, g_tUart0.usRxCount);
+		g_tUart0.usRxCount = 0;
+		g_tUart0.ucRxFrame = 0x00;
 	}
-	
 }
 
 

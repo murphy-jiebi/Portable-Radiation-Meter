@@ -769,7 +769,7 @@ I (..\GDLIB\Include\gd32f10x_can.h)(0x63B3D742)
 I (..\GDLIB\Include\gd32f10x_enet.h)(0x63B3D742)
 I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
 I (..\GDLIB\Include\gd32f10x_misc.h)(0x63B3D742)
-F (..\BSP\bsp_eeprom.c)(0x69615962)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP -I ..\GUI-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\bsp_eeprom.o --omf_browse .\objects\bsp_eeprom.crf --depend .\objects\bsp_eeprom.d)
+F (..\BSP\bsp_eeprom.c)(0x69744790)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP -I ..\GUI-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\bsp_eeprom.o --omf_browse .\objects\bsp_eeprom.crf --depend .\objects\bsp_eeprom.d)
 I (..\INC\gd32f10x_it.h)(0x65275A14)
 I (..\CMSIS\gd32f10x.h)(0x63B3D742)
 I (..\CMSIS\core_cm3.h)(0x63B3D742)
@@ -802,10 +802,10 @@ I (..\GDLIB\Include\gd32f10x_can.h)(0x63B3D742)
 I (..\GDLIB\Include\gd32f10x_enet.h)(0x63B3D742)
 I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
 I (..\GDLIB\Include\gd32f10x_misc.h)(0x63B3D742)
-I (..\INC\bsp.h)(0x6961D5B9)
-I (..\INC\user.h)(0x6947EAAE)
+I (..\INC\bsp.h)(0x6961D5BA)
+I (..\INC\user.h)(0x69745026)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
-F (..\BSP\bsp_gpio.c)(0x6961BB89)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP -I ..\GUI-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\bsp_gpio.o --omf_browse .\objects\bsp_gpio.crf --depend .\objects\bsp_gpio.d)
+F (..\BSP\bsp_gpio.c)(0x6961BB8A)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP -I ..\GUI-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\bsp_gpio.o --omf_browse .\objects\bsp_gpio.crf --depend .\objects\bsp_gpio.d)
 I (..\INC\gd32f10x_it.h)(0x65275A14)
 I (..\CMSIS\gd32f10x.h)(0x63B3D742)
 I (..\CMSIS\core_cm3.h)(0x63B3D742)
@@ -838,11 +838,11 @@ I (..\GDLIB\Include\gd32f10x_can.h)(0x63B3D742)
 I (..\GDLIB\Include\gd32f10x_enet.h)(0x63B3D742)
 I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
 I (..\GDLIB\Include\gd32f10x_misc.h)(0x63B3D742)
-I (..\INC\bsp.h)(0x6961D5B9)
-I (..\INC\user.h)(0x6947EAAE)
+I (..\INC\bsp.h)(0x6961D5BA)
+I (..\INC\user.h)(0x69745026)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
-I (..\BSP\bsp_gpio.h)(0x6961BBD9)
-F (..\BSP\bsp_uart.c)(0x694AB2FC)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP -I ..\GUI-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\bsp_uart.o --omf_browse .\objects\bsp_uart.crf --depend .\objects\bsp_uart.d)
+I (..\BSP\bsp_gpio.h)(0x6961BBDA)
+F (..\BSP\bsp_uart.c)(0x697490C0)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP -I ..\GUI-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\bsp_uart.o --omf_browse .\objects\bsp_uart.crf --depend .\objects\bsp_uart.d)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
 I (..\INC\gd32f10x_it.h)(0x65275A14)
 I (..\CMSIS\gd32f10x.h)(0x63B3D742)
@@ -877,10 +877,10 @@ I (..\GDLIB\Include\gd32f10x_enet.h)(0x63B3D742)
 I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
 I (..\GDLIB\Include\gd32f10x_misc.h)(0x63B3D742)
 I (..\BSP\bsp_uart.h)(0x694624F8)
-I (..\INC\user.h)(0x6947EAAE)
-F (..\BSP\bsp_timer.c)(0x695FCF58)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP -I ..\GUI-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\bsp_timer.o --omf_browse .\objects\bsp_timer.crf --depend .\objects\bsp_timer.d)
-I (..\INC\bsp.h)(0x6961D5B9)
-I (..\INC\user.h)(0x6947EAAE)
+I (..\INC\user.h)(0x69745026)
+F (..\BSP\bsp_timer.c)(0x695FCF5A)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP -I ..\GUI-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\bsp_timer.o --omf_browse .\objects\bsp_timer.crf --depend .\objects\bsp_timer.d)
+I (..\INC\bsp.h)(0x6961D5BA)
+I (..\INC\user.h)(0x69745026)
 I (..\INC\gd32f10x_it.h)(0x65275A14)
 I (..\CMSIS\gd32f10x.h)(0x63B3D742)
 I (..\CMSIS\core_cm3.h)(0x63B3D742)
@@ -914,7 +914,7 @@ I (..\GDLIB\Include\gd32f10x_enet.h)(0x63B3D742)
 I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
 I (..\GDLIB\Include\gd32f10x_misc.h)(0x63B3D742)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
-F (..\BSP\bsp_adc.c)(0x6961C837)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP -I ..\GUI-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\bsp_adc.o --omf_browse .\objects\bsp_adc.crf --depend .\objects\bsp_adc.d)
+F (..\BSP\bsp_adc.c)(0x6973AE22)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP -I ..\GUI-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\bsp_adc.o --omf_browse .\objects\bsp_adc.crf --depend .\objects\bsp_adc.d)
 I (..\INC\gd32f10x_it.h)(0x65275A14)
 I (..\CMSIS\gd32f10x.h)(0x63B3D742)
 I (..\CMSIS\core_cm3.h)(0x63B3D742)
@@ -947,11 +947,11 @@ I (..\GDLIB\Include\gd32f10x_can.h)(0x63B3D742)
 I (..\GDLIB\Include\gd32f10x_enet.h)(0x63B3D742)
 I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
 I (..\GDLIB\Include\gd32f10x_misc.h)(0x63B3D742)
-I (..\INC\bsp.h)(0x6961D5B9)
-I (..\INC\user.h)(0x6947EAAE)
+I (..\INC\bsp.h)(0x6961D5BA)
+I (..\INC\user.h)(0x69745026)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
-F (..\BSP\bsp_rtc.c)(0x6961594F)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP -I ..\GUI-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\bsp_rtc.o --omf_browse .\objects\bsp_rtc.crf --depend .\objects\bsp_rtc.d)
-I (..\INC\user.h)(0x6947EAAE)
+F (..\BSP\bsp_rtc.c)(0x69615950)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP -I ..\GUI-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\bsp_rtc.o --omf_browse .\objects\bsp_rtc.crf --depend .\objects\bsp_rtc.d)
+I (..\INC\user.h)(0x69745026)
 I (..\INC\gd32f10x_it.h)(0x65275A14)
 I (..\CMSIS\gd32f10x.h)(0x63B3D742)
 I (..\CMSIS\core_cm3.h)(0x63B3D742)
@@ -985,7 +985,7 @@ I (..\GDLIB\Include\gd32f10x_enet.h)(0x63B3D742)
 I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
 I (..\GDLIB\Include\gd32f10x_misc.h)(0x63B3D742)
 I (..\BSP\bsp_rtc.h)(0x6947E9A6)
-I (..\INC\bsp.h)(0x6961D5B9)
+I (..\INC\bsp.h)(0x6961D5BA)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
 F (..\BSP\bsp_pwm.c)(0x694F6936)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP -I ..\GUI-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\bsp_pwm.o --omf_browse .\objects\bsp_pwm.crf --depend .\objects\bsp_pwm.d)
 I (..\BSP\bsp_pwm.h)(0x69459312)
@@ -1020,7 +1020,7 @@ I (..\GDLIB\Include\gd32f10x_can.h)(0x63B3D742)
 I (..\GDLIB\Include\gd32f10x_enet.h)(0x63B3D742)
 I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
 I (..\GDLIB\Include\gd32f10x_misc.h)(0x63B3D742)
-F (..\BSP\bsp_key.c)(0x695FD677)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP -I ..\GUI-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\bsp_key.o --omf_browse .\objects\bsp_key.crf --depend .\objects\bsp_key.d)
+F (..\BSP\bsp_key.c)(0x695FD678)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP -I ..\GUI-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\bsp_key.o --omf_browse .\objects\bsp_key.crf --depend .\objects\bsp_key.d)
 I (..\BSP\bsp_key.h)(0x694AB1F0)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
 I (..\CMSIS\gd32f10x.h)(0x63B3D742)
@@ -1053,8 +1053,8 @@ I (..\GDLIB\Include\gd32f10x_can.h)(0x63B3D742)
 I (..\GDLIB\Include\gd32f10x_enet.h)(0x63B3D742)
 I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
 I (..\GDLIB\Include\gd32f10x_misc.h)(0x63B3D742)
-F (..\BSP\bsp_lcd.c)(0x6961C7E5)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP -I ..\GUI-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\bsp_lcd.o --omf_browse .\objects\bsp_lcd.crf --depend .\objects\bsp_lcd.d)
-I (..\BSP\bsp_lcd.h)(0x695B9CFE)
+F (..\BSP\bsp_lcd.c)(0x6961C7E6)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP -I ..\GUI-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\bsp_lcd.o --omf_browse .\objects\bsp_lcd.crf --depend .\objects\bsp_lcd.d)
+I (..\BSP\bsp_lcd.h)(0x695B9D00)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
 I (..\CMSIS\gd32f10x.h)(0x63B3D742)
 I (..\CMSIS\core_cm3.h)(0x63B3D742)
@@ -1086,7 +1086,7 @@ I (..\GDLIB\Include\gd32f10x_can.h)(0x63B3D742)
 I (..\GDLIB\Include\gd32f10x_enet.h)(0x63B3D742)
 I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
 I (..\GDLIB\Include\gd32f10x_misc.h)(0x63B3D742)
-F (..\USER\gd32f10x_it.c)(0x6947E956)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP -I ..\GUI-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\gd32f10x_it.o --omf_browse .\objects\gd32f10x_it.crf --depend .\objects\gd32f10x_it.d)
+F (..\USER\gd32f10x_it.c)(0x6973C5C0)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP -I ..\GUI-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\gd32f10x_it.o --omf_browse .\objects\gd32f10x_it.crf --depend .\objects\gd32f10x_it.d)
 I (..\BSP\bsp_uart.h)(0x694624F8)
 I (..\CMSIS\gd32f10x.h)(0x63B3D742)
 I (..\CMSIS\core_cm3.h)(0x63B3D742)
@@ -1119,9 +1119,9 @@ I (..\GDLIB\Include\gd32f10x_can.h)(0x63B3D742)
 I (..\GDLIB\Include\gd32f10x_enet.h)(0x63B3D742)
 I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
 I (..\GDLIB\Include\gd32f10x_misc.h)(0x63B3D742)
-I (..\INC\user.h)(0x6947EAAE)
+I (..\INC\user.h)(0x69745026)
 I (..\INC\gd32f10x_it.h)(0x65275A14)
-F (..\USER\main.c)(0x6961D5D7)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP -I ..\GUI-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (..\USER\main.c)(0x69748E54)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP -I ..\GUI-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (..\CMSIS\gd32f10x.h)(0x63B3D742)
 I (..\CMSIS\core_cm3.h)(0x63B3D742)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
@@ -1153,19 +1153,19 @@ I (..\GDLIB\Include\gd32f10x_can.h)(0x63B3D742)
 I (..\GDLIB\Include\gd32f10x_enet.h)(0x63B3D742)
 I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
 I (..\GDLIB\Include\gd32f10x_misc.h)(0x63B3D742)
-I (..\INC\bsp.h)(0x6961D5B9)
-I (..\INC\user.h)(0x6947EAAE)
+I (..\INC\bsp.h)(0x6961D5BA)
+I (..\INC\user.h)(0x69745026)
 I (..\INC\gd32f10x_it.h)(0x65275A14)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
 I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x5E8E3CC2)
 I (..\BSP\bsp_uart.h)(0x694624F8)
-I (..\BSP\bsp_lcd.h)(0x695B9CFE)
+I (..\BSP\bsp_lcd.h)(0x695B9D00)
 I (..\BSP\bsp_key.h)(0x694AB1F0)
-I (..\APP\Task_gui.h)(0x695BC683)
-I (..\APP\Task_dose.h)(0x6961D026)
-I (..\APP\TASK_status.h)(0x6961C297)
+I (..\APP\Task_gui.h)(0x695BC684)
+I (..\APP\Task_dose.h)(0x69748E84)
+I (..\APP\TASK_status.h)(0x6961C298)
 F (..\USER\sys.c)(0x694A8164)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP -I ..\GUI-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\sys.o --omf_browse .\objects\sys.crf --depend .\objects\sys.d)
-I (..\INC\user.h)(0x6947EAAE)
+I (..\INC\user.h)(0x69745026)
 I (..\INC\gd32f10x_it.h)(0x65275A14)
 I (..\CMSIS\gd32f10x.h)(0x63B3D742)
 I (..\CMSIS\core_cm3.h)(0x63B3D742)
@@ -1232,22 +1232,58 @@ I (..\GDLIB\Include\gd32f10x_can.h)(0x63B3D742)
 I (..\GDLIB\Include\gd32f10x_enet.h)(0x63B3D742)
 I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
 I (..\GDLIB\Include\gd32f10x_misc.h)(0x63B3D742)
-I (..\INC\user.h)(0x6947EAAE)
+I (..\INC\user.h)(0x69745026)
 I (..\INC\gd32f10x_it.h)(0x65275A14)
-I (..\INC\bsp.h)(0x6961D5B9)
+I (..\INC\bsp.h)(0x6961D5BA)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
-F (..\INC\bsp.h)(0x6961D5B9)()
+F (..\INC\bsp.h)(0x6961D5BA)()
 F (..\INC\gd32f10x_it.h)(0x65275A14)()
 F (..\INC\gd32f10x_libopt.h)(0x63B3D750)()
-F (..\INC\user.h)(0x6947EAAE)()
-F (..\APP\Task_com.c)(0x6961ED34)()
-F (..\APP\Task_gui.c)(0x6961C7DF)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP -I ..\GUI-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\task_gui.o --omf_browse .\objects\task_gui.crf --depend .\objects\task_gui.d)
-I (..\APP\Task_gui.h)(0x695BC683)
+F (..\INC\user.h)(0x69745026)()
+F (..\APP\Task_com.c)(0x69748F98)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP -I ..\GUI-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\task_com.o --omf_browse .\objects\task_com.crf --depend .\objects\task_com.d)
+I (..\APP\Task_com.h)(0x69492F32)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
-I (..\BSP\bsp_lcd.h)(0x695B9CFE)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
+I (..\BSP\bsp_uart.h)(0x694624F8)
+I (..\CMSIS\gd32f10x.h)(0x63B3D742)
+I (..\CMSIS\core_cm3.h)(0x63B3D742)
+I (..\CMSIS\core_cmInstr.h)(0x63B3D742)
+I (..\CMSIS\core_cmFunc.h)(0x63B3D742)
+I (..\CMSIS\system_gd32f10x.h)(0x63B3D742)
+I (..\INC\gd32f10x_libopt.h)(0x63B3D750)
+I (..\GDLIB\Include\gd32f10x_fmc.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_pmu.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_bkp.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_rcu.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_exti.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_gpio.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_crc.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_dma.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_dbg.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_adc.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_dac.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_fwdgt.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_wwdgt.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_rtc.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_timer.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_usart.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_i2c.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_spi.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_sdio.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_exmc.h)(0x65275AB6)
+I (..\GDLIB\Include\gd32f10x_can.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_enet.h)(0x63B3D742)
+I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
+I (..\GDLIB\Include\gd32f10x_misc.h)(0x63B3D742)
+I (..\INC\user.h)(0x69745026)
+I (..\INC\gd32f10x_it.h)(0x65275A14)
+F (..\APP\Task_gui.c)(0x69749436)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP -I ..\GUI-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\task_gui.o --omf_browse .\objects\task_gui.crf --depend .\objects\task_gui.d)
+I (..\APP\Task_gui.h)(0x695BC684)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\BSP\bsp_lcd.h)(0x695B9D00)
 I (..\BSP\bsp_key.h)(0x694AB1F0)
-I (..\GUI\gui.h)(0x69614F83)
-I (..\INC\user.h)(0x6947EAAE)
+I (..\GUI\gui.h)(0x696C831C)
+I (..\INC\user.h)(0x69745026)
 I (..\INC\gd32f10x_it.h)(0x65275A14)
 I (..\CMSIS\gd32f10x.h)(0x63B3D742)
 I (..\CMSIS\core_cm3.h)(0x63B3D742)
@@ -1279,16 +1315,116 @@ I (..\GDLIB\Include\gd32f10x_can.h)(0x63B3D742)
 I (..\GDLIB\Include\gd32f10x_enet.h)(0x63B3D742)
 I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
 I (..\GDLIB\Include\gd32f10x_misc.h)(0x63B3D742)
-I (..\GUI\display.h)(0x6961C6A9)
-I (..\APP\Task_dose.h)(0x6961D026)
-F (..\APP\Task_dose.c)(0x6961D0E6)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP -I ..\GUI-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\task_dose.o --omf_browse .\objects\task_dose.crf --depend .\objects\task_dose.d)
-I (..\APP\Task_dose.h)(0x6961D026)
+I (..\GUI\display.h)(0x696C90AE)
+I (..\APP\Task_dose.h)(0x69748E84)
+F (..\APP\Task_dose.c)(0x69744ED6)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP -I ..\GUI-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\task_dose.o --omf_browse .\objects\task_dose.crf --depend .\objects\task_dose.d)
+I (..\APP\Task_dose.h)(0x69748E84)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
-F (..\APP\Task_status.c)(0x6961C272)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP -I ..\GUI-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\task_status.o --omf_browse .\objects\task_status.crf --depend .\objects\task_status.d)
-I (..\APP\TASK_status.h)(0x6961C297)
+I (..\INC\user.h)(0x69745026)
+I (..\INC\gd32f10x_it.h)(0x65275A14)
+I (..\CMSIS\gd32f10x.h)(0x63B3D742)
+I (..\CMSIS\core_cm3.h)(0x63B3D742)
+I (..\CMSIS\core_cmInstr.h)(0x63B3D742)
+I (..\CMSIS\core_cmFunc.h)(0x63B3D742)
+I (..\CMSIS\system_gd32f10x.h)(0x63B3D742)
+I (..\INC\gd32f10x_libopt.h)(0x63B3D750)
+I (..\GDLIB\Include\gd32f10x_fmc.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_pmu.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_bkp.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_rcu.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_exti.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_gpio.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_crc.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_dma.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_dbg.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_adc.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_dac.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_fwdgt.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_wwdgt.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_rtc.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_timer.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_usart.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_i2c.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_spi.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_sdio.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_exmc.h)(0x65275AB6)
+I (..\GDLIB\Include\gd32f10x_can.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_enet.h)(0x63B3D742)
+I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
+I (..\GDLIB\Include\gd32f10x_misc.h)(0x63B3D742)
+F (..\APP\Task_status.c)(0x69748E34)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP -I ..\GUI-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\task_status.o --omf_browse .\objects\task_status.crf --depend .\objects\task_status.d)
+I (..\APP\TASK_status.h)(0x6961C298)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
-I (..\APP\Task_dose.h)(0x6961D026)
-I (..\BSP\bsp_gpio.h)(0x6961BBD9)
+I (..\APP\Task_dose.h)(0x69748E84)
+I (..\BSP\bsp_gpio.h)(0x6961BBDA)
+I (..\INC\user.h)(0x69745026)
+I (..\INC\gd32f10x_it.h)(0x65275A14)
+I (..\CMSIS\gd32f10x.h)(0x63B3D742)
+I (..\CMSIS\core_cm3.h)(0x63B3D742)
+I (..\CMSIS\core_cmInstr.h)(0x63B3D742)
+I (..\CMSIS\core_cmFunc.h)(0x63B3D742)
+I (..\CMSIS\system_gd32f10x.h)(0x63B3D742)
+I (..\INC\gd32f10x_libopt.h)(0x63B3D750)
+I (..\GDLIB\Include\gd32f10x_fmc.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_pmu.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_bkp.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_rcu.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_exti.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_gpio.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_crc.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_dma.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_dbg.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_adc.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_dac.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_fwdgt.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_wwdgt.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_rtc.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_timer.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_usart.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_i2c.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_spi.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_sdio.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_exmc.h)(0x65275AB6)
+I (..\GDLIB\Include\gd32f10x_can.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_enet.h)(0x63B3D742)
+I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
+I (..\GDLIB\Include\gd32f10x_misc.h)(0x63B3D742)
+F (..\APP\Task_manage.c)(0x69747114)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP -I ..\GUI-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\task_manage.o --omf_browse .\objects\task_manage.crf --depend .\objects\task_manage.d)
+I (..\APP\Task_manage.h)(0x697450B9)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\INC\user.h)(0x69745025)
+I (..\INC\gd32f10x_it.h)(0x65275A14)
+I (..\CMSIS\gd32f10x.h)(0x63B3D742)
+I (..\CMSIS\core_cm3.h)(0x63B3D742)
+I (..\CMSIS\core_cmInstr.h)(0x63B3D742)
+I (..\CMSIS\core_cmFunc.h)(0x63B3D742)
+I (..\CMSIS\system_gd32f10x.h)(0x63B3D742)
+I (..\INC\gd32f10x_libopt.h)(0x63B3D750)
+I (..\GDLIB\Include\gd32f10x_fmc.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_pmu.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_bkp.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_rcu.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_exti.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_gpio.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_crc.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_dma.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_dbg.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_adc.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_dac.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_fwdgt.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_wwdgt.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_rtc.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_timer.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_usart.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_i2c.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_spi.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_sdio.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_exmc.h)(0x65275AB6)
+I (..\GDLIB\Include\gd32f10x_can.h)(0x63B3D742)
+I (..\GDLIB\Include\gd32f10x_enet.h)(0x63B3D742)
+I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
+I (..\GDLIB\Include\gd32f10x_misc.h)(0x63B3D742)
+I (..\BSP\bsp_eeprom.h)(0x697447C8)
 F (..\ModBus\modbus_slave.c)(0x694A8218)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\modbus_slave.o --omf_browse .\objects\modbus_slave.crf --depend .\objects\modbus_slave.d)
 I (..\INC\bsp.h)(0x69481104)
 I (..\INC\user.h)(0x6947EAAD)
@@ -1327,21 +1463,21 @@ I (..\GDLIB\Include\gd32f10x_misc.h)(0x63B3D742)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
 I (..\ModBus\modbus_slave.h)(0x694A80F4)
 I (..\BSP\bsp_uart.h)(0x694624F6)
-F (..\GUI\gui.c)(0x69614F7C)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP -I ..\GUI-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\gui.o --omf_browse .\objects\gui.crf --depend .\objects\gui.d)
-I (..\GUI\gui.h)(0x69614F83)
+F (..\GUI\gui.c)(0x6970F044)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP -I ..\GUI-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\gui.o --omf_browse .\objects\gui.crf --depend .\objects\gui.d)
+I (..\GUI\gui.h)(0x696C831C)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
-I (..\BSP\bsp_lcd.h)(0x695B9CFE)
+I (..\BSP\bsp_lcd.h)(0x695B9D00)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
-I (..\GUI\font.h)(0x695BAB91)
-I (..\GUI\font1.h)(0x69612806)
-F (..\GUI\display.c)(0x6961C6DB)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP -I ..\GUI-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\display.o --omf_browse .\objects\display.crf --depend .\objects\display.d)
-I (..\GUI\display.h)(0x6961C6A9)
+I (..\GUI\font.h)(0x696C5A26)
+I (..\GUI\font1.h)(0x6970F020)
+F (..\GUI\display.c)(0x69748E3E)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\GDLIB\Include -I ..\INC -I ..\BSP -I ..\USER -I ..\ModBus -I ..\APP -I ..\GUI-ID:\Keil_v5\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="534" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\objects\display.o --omf_browse .\objects\display.crf --depend .\objects\display.d)
+I (..\GUI\display.h)(0x696C90AE)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
-I (..\GUI\gui.h)(0x69614F83)
+I (..\GUI\gui.h)(0x696C831C)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
 I (..\BSP\bsp_rtc.h)(0x6947E9A6)
-I (..\INC\bsp.h)(0x6961D5B9)
-I (..\INC\user.h)(0x6947EAAE)
+I (..\INC\bsp.h)(0x6961D5BA)
+I (..\INC\user.h)(0x69745026)
 I (..\INC\gd32f10x_it.h)(0x65275A14)
 I (..\CMSIS\gd32f10x.h)(0x63B3D742)
 I (..\CMSIS\core_cm3.h)(0x63B3D742)
